@@ -1,0 +1,76 @@
+﻿.header{
+    height: 70px;
+    width: calc(100% - 142px);
+    position: absolute;
+    left: 140px;
+    top: 0;
+    border: 1px solid green;
+}
+
+.menu{
+    height: calc(100% - 2px);
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid blue;
+}
+
+.content {
+    height: calc(100% - 72px);
+    width: calc(100% - 142px);
+    position: absolute;
+    top: 70px;
+    left: 140px;
+    border: 1px solid red;
+}
+
+.content .toolbar{
+    height: 35px;
+    width: 100%;
+    background-color: #026b97;
+}
+
+.content .toolbar button{
+    height: 100%;
+    border: none;
+    background-color: #026b97;
+    color: #fff;
+    padding: 0 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+    .content .toolbar button:hover {
+        background-color: #168dbf;
+    }
+
+.content .main-content{
+    height: 500px;
+    overflow: auto;
+}
+
+.content .main-content table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .content .main-content table tr:hover {
+        background-color: #8cd8f7;
+    }
+
+    .content .main-content table th {
+        border: 1px solid #000;
+    }
+
+    .content .main-content table td {
+        border: 1px solid #000;
+    }
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}

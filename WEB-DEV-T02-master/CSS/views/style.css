@@ -1,0 +1,460 @@
+﻿/*
+    Không cho phép chuột bôi đen nội dung trong màn hình
+    Người tạo VDThang 19/05/2019
+*/
+body {
+    overflow: hidden !important;
+    font-family: 'Roboto',Tahoma,sans-serif;
+    font-size: 13px;
+    color: #404040;
+    -moz-user-select: none; /* Trên Firefox */
+    -ms-user-select: none; /* Trên Internet Explorer */
+    -webkit-user-select: none; /* Trên Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Trên Android and iOS callouts (Điện thoại - máy tính bảng)*/
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+    Thực hiện set nền ảnh cho tất cả nội dung cần thiết có trong trang dữ liệu
+    Người tạo VDThang 19/05/2019
+*/
+.icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(/Contents/images/common-icon.png) no-repeat -2px 0px;
+}
+
+    /*Icon close màu xanh*/
+    .icon.close-blue {
+        background-position: -1102px -153px;
+    }
+
+.uncheck-brown {
+    background: url(/Contents/images/common-icon.png) no-repeat center;
+    background-position: -77px -77px;
+    margin: auto;
+    height: 16px;
+    width: 16px;
+}
+
+.check-blue {
+    background: url('/Contents/images/radio-check.png') no-repeat center;
+    margin: auto;
+    height: 16px;
+    width: 16px;
+}
+
+/*Icon popup*/
+.icon.popup {
+    background: url('/Contents/images/icon-popup.png') no-repeat -56px -2px;
+    height: 44px;
+    width: 44px;
+}
+
+/*Icon thông báo sai*/
+.icon.failed {
+    background: url('/Contents/images/exclamation.png') no-repeat center;
+}
+
+/*Icon tìm kiếm nhỏ*/
+.icon.search-small {
+    background: url('/Contents/images/Search-blue.png') no-repeat;
+}
+
+/*Icon đồng ý màu trắng*/
+.icon.agree-white {
+    background-position: -377px -127px;
+}
+/*Icon trợ giúp*/
+.icon.help-small {
+    background: url('/Contents/images/help.png') no-repeat 4px 1px;
+}
+/*Icon radio check*/
+.icon.radio-check {
+    height: 18px;
+    width: 18px;
+    background: url('/Contents/images/radio-check.png');
+}
+/*Icon radio khi không check*/
+.icon.radio-uncheck {
+    height: 18px;
+    width: 18px;
+    background: url('/Contents/images/radio-uncheck.png');
+}
+/*Icon thay đổi mật khẩu*/
+.icon.changepass {
+    background: url('/Contents/images/icon-change-password16.png') no-repeat 12px center;
+    background-size: 19px;
+    width: 30px;
+}
+
+.icon.unchecked {
+    background: url('/Contents/images/uncheck.png') no-repeat center;
+    margin-right: 8px;
+}
+
+.icon.checked {
+    background: url('/Contents/images/check.png') no-repeat center;
+    margin-right: 8px;
+}
+
+/*Icon feedback cho người dùng*/
+.icon.feedback {
+    background: url('/Contents/images/icon-feedback.png') no-repeat 12px center;
+    background-size: 19px;
+    width: 30px;
+}
+/*Icon đăng xuất*/
+.icon.logout {
+    background: url('/Contents/images/icon-logout16.png') no-repeat 12px center;
+    background-size: 19px;
+    width: 30px;
+}
+/*Icon page "trang"*/
+.icon.page {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #0594d0;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+/*Icon trang đầu tiên*/
+.icon.page-first {
+    background-position: -648px -124px;
+}
+/*Icon trang trước*/
+.icon.page-prev {
+    background-position: -699px -124px;
+}
+/*Icon trang sau*/
+.icon.page-next {
+    background-position: -748px -124px;
+}
+/*Icon trang cuối*/
+.icon.page-last {
+    background-position: -797px -124px;
+}
+/*Icon load lại dũ liệu*/
+.icon.page-load {
+    background-position: -848px -124px;
+}
+/*Icon hủy màu xanh*/
+.icon.cancel-blue {
+    background: url('/Contents/images/cancel-blue.png') no-repeat 3px 9px #fff;
+    height: 30px;
+}
+/*Icon không lưu*/
+.icon.not-save {
+    background: url('/Contents/images/not-save.png') no-repeat 3px 6px #fff;
+    height: 30px;
+}
+/*Icon lưu màu trắng*/
+.icon.save-white {
+    background: url('/Contents/images/save-white.png') no-repeat 9px 9px #026b97;
+    width: 24px;
+    height: 30px;
+}
+/*Icon cửa sổ cảnh báo khi xóa*/
+.icon.question {
+    background: url('/Contents/images/icon-popup.png') no-repeat -165px -2px !important;
+    height: 44px;
+    width: 55px;
+}
+/*Icon tìm kiếm nhanh*/
+.icon.quick-search {
+    background: url('/Contents/images/Quick-search.png') no-repeat center !important;
+    width: 30px;
+    height: 36px;
+}
+/*Icon thêm mới màu xanh*/
+.icon.quick-add {
+    background: url('/Contents/images/quick-add.png') no-repeat !important;
+    width: 24px;
+    height: 24px;
+}
+/*Icon thoát cửa sổ*/
+.icon.close {
+    background-position: -1127px -127px;
+}
+/*Icon thoáy cửa sổ màu xanh*/
+.icon.close-blue {
+    background-position: -1102px -153px;
+}
+/*Icon thay đổi kích thước cửa sổ*/
+.icon.resize {
+    background: url('/Contents/images/Maximize.png') no-repeat !important;
+}
+/*Icon thêm mới*/
+.icon.add-new {
+    background-position: -1px -127px;
+}
+/*Icon mũi tên màu trắng*/
+.arrow-down-white {
+    background: url('/Contents/images/arrow-down-white.png') no-repeat !important;
+    margin-left: 15px;
+    width: 7px;
+    height: 3px;
+    cursor: pointer;
+}
+/*Icon nhân bản*/
+.icon.duplicate {
+    background-position: -976px -127px;
+}
+/*Icon xem*/
+.icon.view {
+    background-position: -1602px -127px;
+}
+
+.icon.delete-row {
+    background-position: -2px 0px;
+    margin-left: 8px;
+}
+
+/*Icon chỉnh sửa*/
+.icon.edit {
+    background-position: -77px -203px;
+}
+/*Icon xóa*/
+.icon.delete {
+    background-position: -1076px -127px;
+}
+/*Icon tải lại (nạp)*/
+.icon.reload {
+    background-position: -876px -127px;
+}
+/*Icon mũi tên màu đen*/
+.arrow-down-black {
+    background: url('/Contents/images/arrow-down-line.png') no-repeat center !important;
+    width: 18px;
+    height: 35px;
+    cursor: pointer;
+}
+/*Icon ngày*/
+.icon.date {
+    background-position: 0 -169px;
+    height: 24px;
+    width: 24px;
+}
+/*Icon lấy dữ liệu*/
+.icon.getdata {
+    background-position: -601px -128px;
+}
+/*Icon trước*/
+.icon.before {
+    background-position: -475px -127px;
+}
+/*Icon sau*/
+.icon.after {
+    background-position: -425px -127px;
+}
+/*Icon lưu*/
+.icon.save {
+    background-position: -325px -127px;
+}
+/*Icon hoãn*/
+.icon.stop {
+    background-position: -1401px -127px;
+}
+/*Icon in*/
+.icon.print {
+    background-position: -227px -127px;
+}
+/*Icon trợ giúp*/
+.icon.help {
+    background-position: -176px -202px;
+}
+/*Icon đóng màu trắng*/
+.icon.close-white {
+    background-position: -275px -127px;
+}
+
+/* 
+    Dàn giao diện cho màn hình chính gồm Header, Menu và Content 
+    Người tạo VDThang 19/05/2019
+*/
+/*Header*/
+.header {
+    position: absolute;
+    left: 140px;
+    height: 52px;
+    top: 0;
+    right: 0;
+}
+/*Menu*/
+.nav-menu {
+    position: absolute;
+    width: 140px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #026b97;
+    z-index: 2;
+}
+/*Content*/
+.content {
+    position: absolute;
+    left: 140px;
+    top: 52px;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background-color: #e2e2e2;
+}
+
+/*
+    Dàn giao diện chi tiết cho content
+    Người tạo VDThang 19/05/2019
+*/
+.grid-master {
+    position: absolute;
+    height: calc(80% - 16px);
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    background-color: #fff;
+}
+
+.grid-detail {
+    position: absolute;
+    height: 20%;
+    bottom: 8px;
+    right: 8px;
+    left: 8px;
+    background-color: #ffffff;
+}
+
+/*
+    Dàn giao diện cho grid-master trong content
+    Người tạo VDThang 19/05/2019
+*/
+.cotainer-toolbar-taskbar {
+    height: 91px;
+    background-color: #fff;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/*
+    Dàn layout cho toolbar-taskbar trong grid master
+    Người tạo VDThang 19/05/2019
+*/
+/*1.TOOLBAR*/
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 100%;
+    background-color: #026b97;
+    display: flex;
+}
+
+    /*toolbar item*/
+    .toolbar .toolbar-item {
+        color: #fff;
+        line-height: 36px;
+        padding: 0 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: #026b97;
+        border: none;
+        outline: 0;
+    }
+
+        .toolbar .toolbar-item:hover {
+            background-color: #0088c2;
+        }
+
+        .toolbar .toolbar-item:disabled {
+            cursor: default;
+            opacity: 0.5;
+        }
+
+        .toolbar .toolbar-item span {
+            padding-left: 8px;
+        }
+    /*toolbar sperator*/
+    .toolbar .sperator {
+        height: 32px;
+        margin-top: 2px;
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        border-left-color: #1882ae;
+        border-right-color: #1882ae;
+    }
+
+/*2.TASKBAR*/
+.taskbar {
+    position: absolute;
+    height: 36px;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+    /*taskbar-item*/
+    .taskbar .taskbar-item {
+        padding-left: 8px;
+        height: 37px;
+        color: #404040;
+        line-height: 36px;
+        align-items: center;
+        display: flex;
+    }
+
+        .taskbar .taskbar-item .item-content {
+            width: 113px;
+            border: 1px solid #d0d0d0;
+            height: 35px;
+            border-radius: 3px;
+            display: flex;
+            line-height: 34px;
+        }
+
+        .taskbar .taskbar-item span {
+            padding-right: 10px;
+        }
+
+/*Item-submit data*/
+.taskbar-item .item-content.submit {
+    width: 118px;
+    border-color: #026b97;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Input in item taskbar*/
+.taskbar-item input {
+    width: 80px;
+    padding-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+    border: 0;
+    height: 24px;
+    margin-top: 5px;
+    outline: 0;
+}
+
+/*icon downblack in first item*/
+.taskbar-item .arrow-down-black {
+    width: 28px;
+}
+
+.taskbar-item .submit span {
+    color: #026b97;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.taskbar-item .icon.getdata {
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+

@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Contents/images/favicon.ico" rel="shortcut icon" />
+    <link href="../CSS/views/header.css" rel="stylesheet" />
+    <link href="../CSS/views/menu.css" rel="stylesheet" />
+    <link href="../CSS/views/style.css" rel="stylesheet" />
+    <link href="../CSS/views/demo.css" rel="stylesheet" />
+    <link href="../CSS/libraries/jquery-ui.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Phần header-->
+    <div class="header">
+        <div class="header-left">
+            <div class="title-header">
+                <div class="title-header-content">Thu, chi tiền mặt </div>
+            </div>
+            <div class="menu-header-item">
+                <div class="count-money">
+                    <a href="#"><span>Kiểm kê tiền mặt</span></a>
+                </div>
+                <div class="detail-book">
+                    <a href="#">Sổ chi tiết tiền mặt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="contain-over">
+                <select class="cbo-header">
+                    <option>Thời trang MM Thành Công</option>
+                </select>
+                <div class="user-panel">
+                    <div class="img-user"></div>
+                    <span>Lâm Thế Anh</span>
+                    <div class="arrow-down-black">
+                    </div>
+                </div>
+            </div>
+            <div class="icon notification"></div>
+            <div class="icon helpcenter"></div>
+        </div>
+    </div>
+    <!--Phần menu-->
+    <div class="nav-menu">
+        <div class="logo-mshop">
+            <a class="link-logo" href="#">
+                <img src="/Contents/images/logo-mshopkeeper.png" />
+            </a>
+        </div>
+        <div class="left-menu-inner">
+            <div class="center-content-menu">
+                <a class="parent cls-home menu-active">
+                    <span class="img iconcls-home">&nbsp;</span>
+                    <span class="link-text">Tổng quan</span>
+                </a>
+                <a class="parent cls-report">
+                    <span class="img iconcls-report">&nbsp;</span>
+                    <span class="link-text">Báo cáo</span>
+                </a>
+                <div class="wrap-children report-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="#" class="chilren">Bán hàng</a></li>
+                        <li><a href="#" class="chilren">Mua hàng</a></li>
+                        <li><a href="#" class="chilren">Kho</a></li>
+                        <li><a href="#" class="chilren">Công nợ</a></li>
+                        <li><a href="#" class="chilren">Quỹ tiền</a></li>
+                        <li><a href="#" class="chilren">Lợi nhuận</a></li>
+                    </ul>
+                </div>
+                <a class="parent cls-deliveryledger">
+                    <span class="img iconcls-deliveryledger">&nbsp;</span>
+                    <span class="link-text">Sổ giao hàng</span>
+                </a>
+
+                <a class="parent cls-purchares">
+                    <span class="img iconcls-purchares">&nbsp;</span>
+                    <span class="link-text">Mua hàng</span>
+                </a>
+                <div class="wrap-children purchares-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="/Views/nnkhanh/import.html" class="chilren">Nhập hàng</a></li>
+                        <li><a href="#" class="chilren">Trả lại hàng mua</a></li>
+                        <li><a href="#" class="chilren">Trả nợ</a></li>
+                    </ul>
+                </div>
+
+                <a class="parent cls-stock">
+                    <span class="img iconcls-stock">&nbsp;</span>
+                    <span class="link-text">Kho</span>
+                </a>
+                <div class="wrap-children stock-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="/Views/ntlan/inward.html" class="chilren">Nhập kho</a></li>
+                        <li><a href="#" class="chilren">Xuất kho</a></li>
+                        <li><a href="#" class="chilren">Chuyển kho</a></li>
+                        <li><a href="#" class="chilren">Lệnh điều khiển</a></li>
+                        <li><a href="#" class="chilren">Kiểm kê kho</a></li>
+                        <li><a href="#" class="chilren">Tổng hợp tồn kho</a></li>
+                        <li><a href="#" class="chilren" id="price">Tính giá xuất kho</a></li>
+                    </ul>
+                </div>
+
+                <a class="parent cls-cash">
+                    <span class="img iconcls-cash">&nbsp;</span>
+                    <span class="link-text">Quỹ tiền</span>
+                </a>
+                <div class="wrap-children cash-parent group disable-option">
+                    <ul class="cls-children">
+                        <ul class="sub-ul-group">
+                            <li class="sub-title">Tiền mặt</li>
+                            <li><a href="/Views/vdthang/receiptCash.html" class="chilren">Thu, chi tiền mặt</a></li>
+                            <li><a href="/Views/vdthang/receiptCash.html" class="chilren">Kiểm kê tiền mặt</a></li>
+                            <li><a href="#" class="chilren">Sổ chi tiết tiền mặt</a></li>
+                        </ul>
+                        <ul class="sub-ul-group">
+                            <li class="sub-title">Tiền gửi</li>
+                            <li><a href="#" class="chilren">Thu, chi gửi</a></li>
+                            <li><a href="#" class="chilren">Đối chiếu tiền gửi</a></li>
+                            <li><a href="#" class="chilren">Sổ chi tiết tiền gửi</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <a class="parent cls-payment-receipt">
+                    <span class="img iconcls-payment-receipt">&nbsp;</span>
+                    <span class="link-text">Chi phí</span>
+                </a>
+
+                <a class="parent cls-promotion">
+                    <span class="img iconcls-promotion">&nbsp;</span>
+                    <span class="link-text">Khuyến mại</span>
+                </a>
+                <div class="wrap-children promotion-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="#" class="chilren">Chương trình KM </a></li>
+                        <li><a href="#" class="chilren">Thẻ voucher </a></li>
+                    </ul>
+                </div>
+
+                <a class="parent cls-dictionary">
+                    <span class="img iconcls-dictionary">&nbsp;</span>
+                    <span class="link-text">Danh mục</span>
+                </a>
+                <div class="wrap-children dictionary-parent disable-option">
+                    <ul class="cls-children">
+                        <div class="dictionary-float">
+                            <ul class="sub-ul-group">
+                                <li class="sub-title">Hàng hóa</li>
+                                <li><a href="#" class="chilren">Nhóm hàng hóa</a></li>
+                                <li><a href="#" class="chilren">Hàng hóa</a></li>
+                                <li><a href="#" class="chilren">Đơn vị tính</a></li>
+                                <li><a href="#" class="chilren">In tem mã</a></li>
+                                <li><a href="#" class="chilren">Bảng giá</a></li>
+                                <li><a href="#" class="chilren">Kho</a></li>
+                            </ul>
+                            <ul class="sub-ul-group">
+                                <li class="sub-title">Khách hàng</li>
+                                <li><a href="#" class="chilren">Nhóm khách hàng</a></li>
+                                <li><a href="#" class="chilren">Khách hàng</a></li>
+                            </ul>
+                            <ul class="sub-ul-group">
+                                <li class="sub-title">Nhà cung cấp</li>
+                                <li><a href="#" class="chilren">Nhóm nhà cung cấp</a></li>
+                                <li><a href="#" class="chilren">Nhà cung cấp</a></li>
+                                <li><a href="#" class="chilren">Đối tác giao hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="dictionary-float">
+                            <ul class="sub-ul-group">
+                                <li class="sub-title">Thu, chi</li>
+                                <li><a href="#" class="chilren">Mục thu</a></li>
+                                <li><a href="#" class="chilren">Mục chi</a></li>
+                            </ul>
+                            <ul class="sub-ul-group">
+                                <li class="sub-title">Khác</li>
+                                <li><a href="/Views/ntluong/Employee.html" class="chilren">Nhân viên</a></li>
+                                <li><a href="#" class="chilren">Két đựng tiền</a></li>
+                                <li><a href="#" class="chilren">Ca làm việc</a></li>
+                                <li><a href="#" class="chilren">Thẻ ngân hàng/Ví điện tử</a></li>
+                                <li><a href="#" class="chilren">Kênh bán hàng</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+                <a class="parent cls-meinvoice">
+                    <span class="img iconcls-meinvoice">&nbsp;</span>
+                    <span class="link-text">Hóa đơn điện tử</span>
+                </a>
+                <div class="wrap-children meinvoice-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="#" class="chilren">Danh sách hóa đơn </a></li>
+                    </ul>
+                </div>
+
+                <a class="parent cls-settings">
+                    <span class="img iconcls-settings">&nbsp;</span>
+                    <span class="link-text">Thiết lập</span>
+                </a>
+                <div class="wrap-children settings-parent group disable-option">
+                    <ul class="cls-children">
+                        <ul class="sub-ul-group">
+                            <li class="sub-title">Thiết lập</li>
+                            <li><a href="#" class="chilren">Thông tin chung</a></li>
+                            <li><a href="#" class="chilren">Mua hàng/Bán hàng</a></li>
+                            <li><a href="#" class="chilren">Quy tắc đánh số chứng từ</a></li>
+                        </ul>
+                        <ul class="sub-ul-group">
+                            <li class="sub-title">Số dư ban đầu</li>
+                            <li><a href="#" class="chilren">Tồn kho</a></li>
+                            <li><a href="#" class="chilren">Công nợ khách hàng</a></li>
+                            <li><a href="#" class="chilren">Công nợ nhà cung cấp</a></li>
+                            <li><a href="#" class="chilren">Công nợ đối tác giao hàng</a></li>
+                            <li><a href="#" class="chilren">Quỹ tiền</a></li>
+                        </ul>
+                        <ul class="sub-ul-group">
+                            <li class="sub-title">Khác</li>
+                            <li><a href="#" class="chilren">Nhật ký truy cập</a></li>
+                            <li><a href="#" class="chilren">Xóa dữ liệu dùng thử</a></li>
+                            <li><a href="#" class="chilren">Xóa dữ liệu cửa hàng</a></li>
+                            <li><a href="#" class="chilren">Hủy hóa đơn</a></li>
+                            <li><a href="#" class="chilren">Xuất khẩu chứng từ</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <a class="parent cls-menuhelp">
+                    <span class="img iconcls-menuhelp">&nbsp;</span>
+                    <span class="link-text">Trợ giúp</span>
+                </a>
+                <div class="wrap-children menuhelp-parent disable-option">
+                    <ul class="cls-children">
+                        <li><a href="#" class="chilren">Trung tâm trợ giúp </a></li>
+                        <li><a href="#" class="chilren">Điểu khoản sử dụng </a></li>
+                        <li><a href="#" class="chilren">Thông tin sản phẩm </a></li>
+                    </ul>
+                </div>
+
+                <a class="parent cls-omnichannel">
+                    <span class="img iconcls-omnichannel">&nbsp;</span>
+                    <span class="link-text">OCM</span>
+                </a>
+                <a class="parent cls-fiveshop">
+                    <span class="img iconcls-fiveshop">&nbsp;</span>
+                    <span class="link-text">5Shop</span>
+                </a>
+            </div>
+            <div class="bottom-content-menu">
+                <a class="parent cls-home">
+                    <span class="img iconcls-ward">&nbsp;</span>
+                    <span class="link-text">Hàng hóa</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Phần content-->
+    <div class="content">
+        <div class="grid-master">
+            <div class="cotainer-toolbar-taskbar">
+                <div class="toolbar">
+                    <button class="toolbar-item add-new" title="Ctrl+1">
+                        <div class="icon add-new">
+                        </div>
+                        <span>Thêm mới</span>
+                        <div class="arrow-down-white">
+                        </div>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item duplicate">
+                        <div class="icon duplicate">
+                        </div>
+                        <span>Nhân bản</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item view">
+                        <div class="icon view">
+                        </div>
+                        <span>Xem</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item edit" title="Ctrl+E" disabled>
+                        <div class="icon edit">
+                        </div>
+                        <span>Sửa</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item delete" title="Ctrl+D" disabled>
+                        <div class="icon delete">
+                        </div>
+                        <span>Xóa</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item reload">
+                        <div class="icon reload">
+                        </div>
+                        <span>Nạp</span>
+                    </button>
+                </div>
+                <div class="taskbar">
+                    <div class="taskbar-item">
+                        <div class="item-content time">
+                            <input type="text" class="txtTime" value="Tháng này" />
+                            <div class="arrow-down-black"></div>
+                            <div class="pnlTime disable-option" show="false">
+                                <ul>
+                                    <li>Hôm nay</li>
+                                    <li>Hôm qua</li>
+                                    <li>Tuần này</li>
+                                    <li>Tuần trước</li>
+                                    <li>Tháng này</li>
+                                    <li>Tháng trước</li>
+                                    <li>Quý này</li>
+                                    <li>Quý trước</li>
+                                    <li>6 tháng trước </li>
+                                    <li>Năm nay</li>
+                                    <li>Năm trước</li>
+                                    <li>Khác</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taskbar-item">
+                        <span>Từ ngày</span>
+                        <div class="item-content" fieldDate="date-from">
+                            <input type="text" class="txtDateFrom" />
+                        </div>
+                    </div>
+                    <div class="taskbar-item">
+                        <span>Đến ngày</span>
+                        <div class="item-content" fieldDate="date-to">
+                            <input type="text" class="txtDateTo" />
+                        </div>
+                    </div>
+                    <div class="taskbar-item">
+                        <div class="item-content submit">
+                            <div class="icon getdata"></div>
+                            <span>Lấy dữ liệu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-content">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th fieldName=""></th>
+                            <th fieldName="refDate">Ngày</th>
+                            <th fieldName="refNo">Số chứng từ</th>
+                            <th fieldName="refType">Loại chứng từ</th>
+                            <th fieldName="total">Tổng tiền</th>
+                            <th fieldName="contactName">Đối tượng nộp nhận</th>
+                            <th fieldName="reason">Lí do</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="dialog" title="Phiếu thu/chi">
+                <div class="content1 input-data">
+                    <div class=" left sub">
+                        <div class="input-title">
+                            <div class="title">
+                                Ngày
+                            </div>
+                            <input type="text" class="input" property="refDate">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                Số chứng từ
+                            </div>
+                            <input type="text" class="input" property="refNo">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                Loại chứng từ
+                            </div>
+                            <input type="text" class="input" property="refType">
+                        </div>
+                    </div>
+                    <div class=" right sub">
+                        <div class="input-title">
+                            <div class="title">
+                                Tổng tiền
+                            </div>
+                            <input type="text" class="input" property="total">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                Đối tượng nộp nhận
+                            </div>
+                            <input type="text" class="input" property="contactName">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                Lí do
+                            </div>
+                            <input type="text" class="input" property="reason">
+                        </div>
+                    </div>
+                </div>
+                <div class="content1 button-data">
+                    <button class="save">Save</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+            <div id="dialog1" title="Sửa phiếu">
+                <div class="content1 input-data">
+                    <div class=" left sub">
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Ngày</p>
+                            </div>
+                            <input type="text" class="input" property="refDate">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Số phiếu thu</p>
+                            </div>
+                            <input type="text" class="input" property="refNo">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Loại chứng từ</p>
+                            </div>
+                            <input type="text" class="input" property="refType">
+                        </div>
+                    </div>
+                    <div class=" right sub">
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Tổng tiền</p>
+                            </div>
+                            <input type="text" class="input" property="total">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Đối tượng nộp nhận</p>
+                            </div>
+                            <input type="text" class="input" property="contactName">
+                        </div>
+                        <div class="input-title">
+                            <div class="title">
+                                <p>Lí do</p>
+                            </div>
+                            <input type="text" class="input" property="reason">
+                        </div>
+                    </div>
+                </div>
+                <div class="content1 button-data">
+                    <button class="save">Save</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="../Scripts/libraries/jquery-3.4.1.js"></script>-->
+    <script src="../Scripts/libraries/jquery-1.12.4.js"></script>
+    <script src="../Scripts/libraries/jquery-ui.js"></script>
+    <script src="../Scripts/common/common.js"></script>
+    <script src="../Scripts/common/base.js"></script>
+    <script src="../Scripts/views/receipt.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿/*
+    Chỉnh sửa chi tiết giao diện cho phần header
+    Người tạo VDThang 17/05/2019
+*/
+.title-header {
+    width: 170px;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title-header-content {
+    left: 21px;
+    top: 18px;
+    position: absolute;
+    width: 140px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 16px !important;
+    text-align: right;
+}
+
+.menu-header-item {
+    width: calc(100% - 170px);
+    height: 50px;
+    position: absolute;
+    left: 182px;
+    top: 0;
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.count-money {
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.detail-book {
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 100%;
+}
+
+.menu-header-item a {
+    position: absolute;
+    text-decoration: none;
+    color: #0088c2;
+    font-weight: 500;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+}
+
+    .menu-header-item a:hover {
+        color: #02697b;
+        font-weight: 500;
+    }
+
+/*
+    Phần bên phải của header
+    Người tạo VDThang 17/05/2019
+*/
+.header-right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-left {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.header-right .user-panel {
+    display: flex;
+    line-height: 52px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+
+.contain-over {
+    width: calc(100% - 104px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+/*
+    Chỉnh sửa các icon trong phần header
+    Người tạo VDThang 17/05/2019
+*/
+.header-right .icon {
+    width: 46px;
+    height: 100%;
+    border-left: 1px solid #d0d0d0;
+}
+
+.icon.helpcenter {
+    background: url('/Contents/images/icon_help_18.png') no-repeat center center;
+}
+
+.icon.notification {
+    background: url('/Contents/images/notify-18.png') no-repeat center center;
+}
+
+.img-user {
+    width: 28px;
+    height: 28px;
+    background-image: url('/Contents/images/User.jpg');
+    background-size: 28px;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+
+.header-right .user-panel .arrow-down-black {
+    height: 52px;
+}
+
+.header-right .cbo-header {
+    height: 32px;
+    width: 203px;
+    padding: 7px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    margin-top: 10px;
+}

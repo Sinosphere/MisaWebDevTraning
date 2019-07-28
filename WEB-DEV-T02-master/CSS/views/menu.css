@@ -1,0 +1,284 @@
+﻿/*
+    Xử lý giao diện phần menu cho tất cả các trang
+    Người tạo VDThang 21/05/2019
+*/
+.nav-menu {
+    position: absolute;
+    width: 140px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #026b97;
+    z-index: 2;
+}
+
+.disable-option {
+    display: none;
+}
+
+/* 
+    Phân chia menu thành các phần chứa logo, menu item
+    Người tạo VDThang 21/05/2019
+*/
+/*Logo nav-menu*/
+.logo-mshop {
+    width: 140px;
+    height: 52px;
+    background-color: #006189;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .logo-mshop .link-logo img {
+        width: 120px;
+    }
+
+/*menu-inner*/
+.nav-menu .left-menu-inner {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 52px);
+}
+
+/*center-menu layout*/
+.left-menu-inner .center-content-menu {
+    /*height: 650px;*/
+    width: 100%;
+}
+
+/*menu parent item*/
+.nav-menu a.parent {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+    /*
+    Chỉnh sửa chi tiết menu item và logo tương ứng cho từng mục
+    Người tạo VDThang 21/05/2019
+*/
+    /*icon menu item*/
+    .nav-menu a.parent .img {
+        position: absolute;
+        height: 38px;
+        width: 22px;
+        text-align: center;
+        left: 8px;
+        top: 2px;
+        background: url('/Contents/images/slibarmenu.png') no-repeat;
+    }
+
+a.menu-active {
+    background-color: #00577b !important;
+}
+
+.nav-menu a.parent:hover {
+    background-color: #00577b;
+    color: #fff;
+}
+
+/*logo home*/
+.center-content-menu a.parent .iconcls-home {
+    background-position: 0 6px;
+}
+
+/*logo report*/
+.center-content-menu a.parent .iconcls-report {
+    background-position: 0 -273px;
+}
+
+/*logo deliveryledger*/
+.center-content-menu a.parent .iconcls-deliveryledger {
+    background: url('/Contents/images/ic_sogiaohang.png') no-repeat 4px 9px !important;
+}
+
+/*logo purchares*/
+.center-content-menu a.parent .iconcls-purchares {
+    background-position: 0 -33px;
+}
+
+/*logo stock*/
+.center-content-menu a.parent .iconcls-stock {
+    background-position: 0 -75px;
+}
+
+/*logo cash*/
+.center-content-menu a.parent .iconcls-cash {
+    background-position: 0 -115px;
+}
+
+/*logo payment-receipt*/
+.center-content-menu a.parent .iconcls-payment-receipt {
+    background-position: -2px -154px;
+}
+
+/*logo promotion*/
+.center-content-menu a.parent .iconcls-promotion {
+    background-position: 0 -193px;
+}
+
+/*logo dictionary*/
+.center-content-menu a.parent .iconcls-dictionary {
+    background-position: 0 -233px;
+}
+
+/*logo meinvoice*/
+.center-content-menu a.parent .iconcls-meinvoice {
+    background: url('/Contents/images/Logo_meInvoice.svg') no-repeat center 7px !important;
+}
+
+/*logo settings*/
+.center-content-menu a.parent .iconcls-settings {
+    background-position: 0 -313px;
+}
+
+/*logo menuhelp*/
+.center-content-menu a.parent .iconcls-menuhelp {
+    background-position: 0 -383px;
+}
+
+/*logo omnichannel*/
+.center-content-menu a.parent .iconcls-omnichannel {
+    background: url('/Contents/images/ic_ocm_logo.png') no-repeat 4px 9px !important;
+}
+
+/*logo fiveshop*/
+.center-content-menu a.parent .iconcls-fiveshop {
+    background: url('/Contents/images/icon_5shop_white_24_1.png') no-repeat 0 5px !important;
+}
+
+.bottom-content-menu a.parent .iconcls-ward {
+    background-position: 0 -350px;
+}
+
+/*link text menu item*/
+.nav-menu a.parent .link-text {
+    position: absolute;
+    width: 100px;
+    height: 26px;
+    left: 0;
+    bottom: 3px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: unset;
+}
+
+.center-content-menu {
+    border-bottom: 1px solid #004765;
+}
+
+    /*
+    Chỉnh sửa chi tiết giao diện cho các khối menu con
+    khi người dùng chọn danh mục tương ứng
+    Người tạo VDThang 21/05/2019
+*/
+
+    .center-content-menu .wrap-children {
+        position: absolute;
+        top: 0;
+        left: 140px;
+        width: 235px;
+        overflow-y: auto;
+        background-color: #00577b;
+        outline: none;
+        height: 100%;
+        z-index: 9999;
+    }
+
+.wrap-children .cls-children {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cls-children li {
+    padding: 0;
+}
+
+.wrap-children li {
+    list-style: none;
+    width: 100%;
+    height: 32px;
+    background-color: #00577b;
+    line-height: 32px;
+}
+
+    .wrap-children li a {
+        display: inline-block;
+        height: 100%;
+        width: 213px;
+        margin-top: 4px;
+        text-decoration: none;
+        color: #b2d5e3;
+        padding: 2px 2px 2px 20px;
+    }
+
+    .wrap-children li:hover {
+        background-color: #00577b;
+    }
+
+    .wrap-children li a:hover {
+        color: #fff;
+        background-color: #00577b;
+    }
+
+#price::before {
+    content: "";
+    display: block;
+    pointer-events: fill;
+    cursor: default;
+    width: 90%;
+    height: 1px;
+    background-color: #0a7aa6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Các phần ul li có trong menu con*/
+.group ul {
+    padding: 20px;
+}
+
+.sub-ul-group {
+    width: 195px;
+    padding: 0;
+    margin: auto;
+}
+
+    .sub-ul-group li a {
+        width: 193px;
+    }
+
+    .sub-ul-group .sub-title {
+        width: 179px;
+        padding-left: 16px;
+        background-color: #004e6e !important;
+        height: 32px;
+        line-height: 32px;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: default;
+        color: #fff;
+    }
+
+.dictionary-parent {
+    width: 450px !important;
+    overflow: hidden;
+}
+
+.wrap-children .cls-children .dictionary-float {
+    display: inline-table;
+    width: 195px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
